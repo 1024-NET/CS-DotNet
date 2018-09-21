@@ -31,7 +31,7 @@
 - CLR/GC
 
 
-[字符串操作]()
+[字符串操作](https://github.com/dncProject/CS-DotNet/blob/master/Stringoperations.md)
 - 字符串的基本操作
 - String和StringBuilder
 - 字符的 ASCII 码和 Unicode 码

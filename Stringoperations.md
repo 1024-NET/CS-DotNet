@@ -1,6 +1,6 @@
 ## 字符串操作  
 <div align="center">
-    <img src="https://raw.githubusercontent.com/dncProject/CS-DotNet/master/string.png">
+    <img src="https://raw.githubusercontent.com/dncProject/CS-DotNet/master/string.png" width="200px">
     <br>
 </div>
 前言：  

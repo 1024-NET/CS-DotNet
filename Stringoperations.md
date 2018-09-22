@@ -23,7 +23,8 @@ Console.WriteLine(int.Parse(str[0]) + int.Parse(str[1]));
 int n = int.Parse(Console.ReadLine());
 
 //当然也可以用一个List集合来存储 
-List<int> str = new List<string>(Console.ReadLine().Split()).ConvertAll(i => int.Parse(i)); //ConvertAll():将当前泛型集合中的元素转换为另一种类型并返回列表
+//ConvertAll():将当前泛型集合中的元素转换为另一种类型并返回列表
+List<int> str = new List<string>(Console.ReadLine().Split()).ConvertAll(i => int.Parse(i)); 
 Console.WriteLine(str[0] + str[1]);
 ```
 在很多算法或者字符串处理的地方用的非常多，当然一般算法都是用C/C++，支持C#编译的OJ比较少，我一般刷OJ也是用的C#，山东理工的OJ网站：http://acm.sdut.edu.cn/
@@ -60,13 +61,60 @@ foreach (string i in strArray)
 {
   Console.WriteLine(i.ToString());
 }
+
 //对多个字符进行分割
+string str1 = "adasdssdasddasad";
+string[] sArray1 = str1.Trim('d').Split(new char[2] {'a','s'});//Trim('d')去掉前后为d的字符，Trim()为去掉前后为空的字符
+foreach (string i in sArray1)
+{
+     Console.WriteLine(i.ToString());
+}
+
+//也可以用正则表达式来进行字符串的分割，添加引用using System.Text.RegularExpressions;
+string str2 = "adsfdsafdssddafsafdsdfda";
+string[] sArray2 = Regex.Split(str2,"ds",RegexOptions.IgnoreCase);
+foreach (string i in sArray2)
+{
+     Console.WriteLine(i.ToString());
+}
+Console.WriteLine("sArray2有多少个元素："+sArray2.Length);
+Console.ReadKey();
 
 ```
 
+String.Split 方法有6个重载函数：
+下边我们通过一些实例来说明下怎么使用(以下string words = "1,2.3,,4";)：
+```
+1. public string[] Split(params char[] separator)
+程序代码
+string[] split = words.Split(new Char[] { ',' });//返回:{"1","2.3","","4"}
+string[] split = words.Split(new Char[] { ',', '.' });//返回:{"1","2","3","","4"} 
+2. public string[] Split(char[] separator, int count)
+程序代码
+string[] split = words.Split(new Char[] { ',', '.' }, 2);//返回:{"1","2.3,,4"}
+string[] split = words.Split(new Char[] { ',', '.' }, 6);//返回:{"1","2","3","","4"} 
+3. public string[] Split(char[] separator, StringSplitOptions options)
+程序代码
+string[] split = words.Split(new Char[] { ',', '.' }, StringSplitOptions.RemoveEmptyEntries);//返回:{"1","2","3","4"} 不保留空元素
+string[] split = words.Split(new Char[] { ',', '.' }, StringSplitOptions.None);//返回:{"1","2","3","","4"} 保留空元素 
+4. public string[] Split(string[] separator, StringSplitOptions options)
+程序代码
+string[] split = words.Split(new string[] { ",", "." }, StringSplitOptions.RemoveEmptyEntries);//返回:{"1","2","3","4"} 不保留空元素
+string[] split = words.Split(new string[] { ",", "." }, StringSplitOptions.None);//返回:{"1","2","3","","4"} 保留空元素 
+5. public string[] Split(char[] separator, int count, StringSplitOptions options)
+程序代码
+string[] split = words.Split(new Char[] { ',', '.' }, 2, StringSplitOptions.RemoveEmptyEntries);//返回:{"1","2.3,,4"} 不保留空元素
+string[] split = words.Split(new Char[] { ',', '.' }, 6, StringSplitOptions.None);//返回:{"1","2","3","","4"} 保留空元素 
+6. public string[] Split(string[] separator, int count, StringSplitOptions options)
+程序代码
+string[] split = words.Split(new string[] { ",", "." }, 2, StringSplitOptions.RemoveEmptyEntries);//返回:{"1","2.3,,4"} 不保留空元素
+string[] split = words.Split(new string[] { ",", "." }, 6, StringSplitOptions.None);//返回:{"1","2","3","","4"} 保留空元素
+
+```
 -------------
 
 ### 二，String和StringBuilder的区别
+
 
 
 

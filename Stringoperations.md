@@ -1,4 +1,8 @@
 ## 字符串操作  
+<div align="center">
+    <img src="https://raw.githubusercontent.com/dncProject/CS-DotNet/master/string.png">
+    <br>
+</div>
 前言：  
 > 无论是哪一种编程语言，对字符串的操作绝对是很重要的。从终端输入的字符都是字符串。不管是什么数据格式（JSON、XML）还是数据库文件都会涉及到对字符串的操作。最后都将以字符流或字节流的形式进行读取操作。
 

@@ -35,6 +35,7 @@
 - 集合
 - CLR/GC
 
+[awesome-csharp](https://github.com/coding-daily/awesome-csharp/blob/master/README.md)
 
 [字符串操作](https://github.com/dncProject/CS-DotNet/blob/master/Stringoperations.md)
 - 字符串的基本操作

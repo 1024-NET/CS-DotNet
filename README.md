@@ -81,7 +81,7 @@
 
 
 [设计模式]()
-- 23种设计模式GOF
+- 23种设计模式GOF SOLID
 
 [.NET Standard]()
 - Windows Forms

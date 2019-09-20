@@ -28,7 +28,7 @@
 - 多态
 - 抽象类
 - 接口
-- 委托
+- [委托](https://github.com/1024-NET/CS-DotNet/blob/master/Delegate.md)
 - 事件
 - 反射
 - 特性/语法糖

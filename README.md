@@ -24,6 +24,8 @@
  
  [csharp-gist](https://github.com/ckjbug/Gist/blob/master/README.md)
  
+ [Windows-Core-Programming](https://github.com/ckjbug/Windows-Core-Programming)
+ 
  ------
  
  [OO编程]()

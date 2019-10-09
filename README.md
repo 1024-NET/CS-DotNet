@@ -2,7 +2,7 @@
 ### .NET开发人员技术栈(知识体系)，C#系列笔记！
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/dncProject/CS-DotNet/master/56.png">
+    <img src="https://raw.githubusercontent.com/1024-NET/CS-DotNet/master/Csharp.png">
     <br>
 </div>
 

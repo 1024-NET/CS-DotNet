@@ -32,6 +32,8 @@
  
  [Windows-Core-Programming](https://github.com/ckjbug/Windows-Core-Programming)
  
+ [CS-Books](https://github.com/ckjbug/CS-Books)
+ 
  
  
 ### 目录：

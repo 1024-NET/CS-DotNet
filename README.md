@@ -34,6 +34,9 @@
  
  [CS-Books](https://github.com/ckjbug/CS-Books)
  
+ [csharp-video-tutorial](https://space.bilibili.com/29302915/favlist?fid=427506715&ftype=create)
+ 
+ [dotnet-video-tutorial](https://space.bilibili.com/29302915/favlist?fid=190219115&ftype=create)
  
  
 ### 目录：
